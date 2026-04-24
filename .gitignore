@@ -8,7 +8,6 @@ node_modules/
 
 # Imágenes duplicadas
 *.jpg
-*.jpeg
 *.gif
 *.bmp
 
