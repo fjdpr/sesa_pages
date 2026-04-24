@@ -273,6 +273,12 @@ footer p {
     margin: 0;
 }
 
+.footer-address {
+    font-size: 0.55rem;
+    margin-top: 4px;
+    opacity: 0.75;
+}
+
 /* Responsivo */
 @media (max-width: 768px) {
     .navbar {
