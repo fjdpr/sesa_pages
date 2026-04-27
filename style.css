@@ -12,8 +12,8 @@ body {
 
 body {
     line-height: 1.6;
-    color: #1f2d3d;
-    background: #0f172a;
+    color: #f5f7fa;
+    background: #101010;
 }
 
 /* Navegacion */
@@ -22,8 +22,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 12px 10%;
-    background: #f8fafc;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    background: #151515;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.35);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -33,6 +33,9 @@ body {
     display: flex;
     align-items: center;
     height: 50px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 6px 10px;
 }
 
 .logo-img {
@@ -51,7 +54,7 @@ body {
 /* Hero */
 .hero {
     min-height: 52vh;
-    background: linear-gradient(135deg, rgba(0, 91, 170, 0.92) 0%, rgba(0, 143, 214, 0.87) 100%),
+    background: linear-gradient(135deg, rgba(14, 14, 14, 0.78) 0%, rgba(34, 34, 34, 0.72) 100%),
         url('images/infraestructura-edificio-inteligente-seguridad-industrial-guadalajara-mexico.png') center/cover no-repeat;
     display: flex;
     justify-content: center;
@@ -128,7 +131,7 @@ body {
 }
 
 .hero-text p {
-    color: #10263e;
+    color: #ffffff;
     text-shadow: none;
     font-weight: 400;
 }
@@ -176,7 +179,7 @@ body {
 /* Seccion contacto */
 .solutions {
     padding: 8px 10% 6px;
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.76) 100%),
+    background: linear-gradient(145deg, rgba(15, 15, 15, 0.78) 0%, rgba(28, 28, 28, 0.72) 100%),
         url('images/red-global-conectividad-tecnologia-seguridad-mexico.png') center 22%/cover no-repeat;
     text-align: center;
 }
@@ -196,7 +199,7 @@ body {
 .card {
     padding: 16px;
     border-radius: 12px;
-    background: #fff;
+    background: rgba(0, 0, 0, 0.2);
     text-align: center;
     width: 100%;
     min-height: 140px;
@@ -211,39 +214,39 @@ body {
     min-height: auto;
     padding: 10px 14px;
     background: transparent;
-    border: 2px solid #0a63b3;
-    box-shadow: 0 4px 12px rgba(7, 84, 157, 0.18);
-    color: #eaf4ff;
+    border: 2px solid rgba(255, 255, 255, 0.55);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    color: #ffffff;
 }
 
 .contact-card h3 {
-    color: #111111;
+    color: #ffffff;
     font-size: 1.35rem;
     margin-bottom: 4px;
     font-weight: 800;
 }
 
 .contact-card p {
-    color: #111111;
+    color: #ffffff;
     font-size: 0.86rem;
     margin: 2px 0;
     line-height: 1.2;
 }
 
 .contact-card a {
-    color: #111111;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 700;
-    border-bottom: 2px solid rgba(17, 17, 17, 0.45);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.55);
 }
 
 .contact-card a:hover {
-    border-bottom-color: #111111;
+    border-bottom-color: #ffffff;
 }
 
 /* Texto de cobertura y footer */
 .coverage {
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.76) 100%),
+    background: linear-gradient(145deg, rgba(15, 15, 15, 0.78) 0%, rgba(28, 28, 28, 0.72) 100%),
         url('images/red-global-conectividad-tecnologia-seguridad-mexico.png') center 28%/cover no-repeat;
     padding: 14px 10% 8px;
 }
@@ -254,13 +257,13 @@ body {
     font-size: 0.72rem;
     text-align: center;
     text-decoration: underline;
-    color: #111111;
+    color: #ffffff;
     text-shadow: none;
     margin: 0;
 }
 
 footer {
-    background: #111827;
+    background: #0f0f0f;
     color: #fff;
     text-align: center;
     padding: 8px 10%;
