@@ -1,0 +1,33 @@
+/* ─── Variables globales y reset ──────────────────────────────────────────────
+   Cambia los valores en :root para ajustar la paleta de todo el sitio.
+   ─────────────────────────────────────────────────────────────────────────── */
+
+:root {
+    --bg-main: #101010;           /* Fondo oscuro principal */
+    --text-main: #f5f7fa;         /* Texto claro */
+    --white: #ffffff;
+    --line-soft: rgba(255, 255, 255, 0.55);   /* Bordes suaves */
+    --line-faint: rgba(255, 255, 255, 0.35);  /* Bordes sutiles */
+    --panel: rgba(0, 0, 0, 0.22);             /* Fondo de inputs */
+    --panel-strong: rgba(0, 0, 0, 0.28);      /* Fondo del formulario */
+    --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.35);
+    --anim-fast: 220ms;
+    --anim-mid: 420ms;
+    --anim-slow: 760ms;
+}
+
+/* Reset universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body { width: 100%; }
+
+body {
+    line-height: 1.6;
+    color: var(--text-main);
+    background: var(--bg-main);
+}

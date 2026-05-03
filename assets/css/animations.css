@@ -1,0 +1,40 @@
+/* ─── Animaciones ────────────────────────────────────────────────────────────
+   Reveal al scroll y destello del hero.
+
+   FAILSAFE: los elementos solo se ocultan si JS cargó correctamente
+   (clase .js-loaded en <html>). Si JS falla, todo es visible por defecto.
+   ─────────────────────────────────────────────────────────────────────────── */
+
+/* Estado base: siempre visible */
+.reveal-item {
+    opacity: 1;
+    transform: none;
+    transition: opacity var(--anim-mid) ease, transform var(--anim-mid) ease;
+}
+
+/* Oculto SOLO cuando JS está activo */
+.js-loaded .reveal-pending {
+    opacity: 0;
+    transform: translateY(12px);
+}
+
+/* Visible después del reveal */
+.reveal-item.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Destello horizontal del hero */
+@keyframes heroSweep {
+    from { transform: translateX(-35%); }
+    to   { transform: translateX(35%); }
+}
+
+/* Sin movimiento si el usuario lo prefiere (accesibilidad) */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+    .reveal-item { opacity: 1; transform: none; }
+}

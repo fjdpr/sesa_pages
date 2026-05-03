@@ -1,0 +1,47 @@
+/* ─── Responsive (≤ 768px) ───────────────────────────────────────────────────
+   Ajustes de layout para móvil: tamaños, dirección, espacios.
+   ─────────────────────────────────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+
+    /* Navbar vertical */
+    .navbar { flex-direction: column; gap: 6px; padding: 6px 4%; }
+    .logo { height: 40px; }
+    .logo-img { max-width: 104px; }
+
+    /* Hero inicio */
+    .hero { min-height: 60vh; height: auto; padding: 10px 0 8px; }
+    .hero-content { flex-direction: column; gap: 10px; }
+    .hero-logo-container { width: 132px; height: 132px; border: none; background-color: transparent; }
+    .hero-logo-left { width: 112px; height: 112px; padding: 6px; }
+    .hero-content h1 { font-size: 1.65rem; margin-bottom: 6px; }
+    .hero-content p { font-size: 0.9rem; line-height: 1.25; }
+    .hero-intro { font-size: 0.84rem; margin-bottom: 5px; }
+    .hero-description { font-size: 0.7rem; line-height: 1.28; max-width: 92%; }
+    .hero-text .hero-tagline { margin-top: 8px; padding-top: 6px; font-size: 0.8rem; }
+
+    /* Hero contacto */
+    .hero-content-form { width: 100%; padding: 0 4%; }
+    .hero-form-wrapper { padding: 10px 12px; }
+    .hero-form-wrapper h2 { font-size: 1.05rem; margin-bottom: 6px; }
+    .hero-form-subtitle { font-size: 0.72rem; margin: 0 0 6px; }
+    .hero-contact-form { grid-template-columns: 1fr; gap: 6px; }
+    .hero-contact-form label { font-size: 0.74rem; }
+    .hero-contact-form input, .hero-contact-form textarea, .hero-form-submit { font-size: 0.78rem; }
+    .hero-contact-form textarea { min-height: 112px; resize: vertical; }
+    .hero-form-submit { min-width: 150px; }
+
+    /* Secciones */
+    .solutions { padding: 6px 4% 2px; }
+    .card { padding: 10px; }
+    .contact-card { width: min(100%, 360px); padding: 10px 12px; border: none; background-color: transparent; }
+    .contact-card h3 { font-size: 1.18rem; margin-bottom: 3px; }
+    .contact-card p { font-size: 0.76rem; margin: 1px 0; line-height: 1.16; }
+    .contact-card i { width: 18px; flex: 0 0 18px; }
+    .coverage-cities { font-size: 0.6rem; line-height: 1.16; }
+    .coverage-inline { margin-top: 6px; }
+    footer { padding: 7px 4%; font-size: 0.62rem; }
+
+    /* Modal */
+    .modal-box { padding: 24px 20px; }
+}

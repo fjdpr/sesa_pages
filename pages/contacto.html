@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | SESA Comercializadora</title>
+    <meta name="description" content="Contacto de SESA Comercializadora. Envíanos tu proyecto y te responderemos a la brevedad.">
+    <link rel="canonical" href="https://sesacomercializadora.com/pages/contacto.html">
+    <!-- Fuente corporativa -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+    <!-- Estilos: cada archivo tiene una sola responsabilidad -->
+    <link rel="stylesheet" href="../assets/css/foundation.css">
+    <link rel="stylesheet" href="../assets/css/nav.css">
+    <link rel="stylesheet" href="../assets/css/hero.css">
+    <link rel="stylesheet" href="../assets/css/sections.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <!-- JS: animaciones, envío AJAX y modal -->
+    <script src="../assets/js/app.js" defer></script>
+</head>
+<body data-page="contacto">
+
+    <!-- Navegación fija arriba -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../images/sesa-comercializadora-logo-guadalajara-mexico.png"
+                     alt="SESA Comercializadora logo"
+                     title="SESA Comercializadora | Guadalajara, Mexico"
+                     class="logo-img">
+            </div>
+            <ul class="nav-links">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero: formulario de contacto en dos columnas -->
+    <section class="hero" id="contacto" aria-label="Formulario de contacto">
+        <div class="hero-overlay"></div>
+        <div class="hero-content hero-content-form">
+            <div class="hero-form-wrapper">
+                <h2>Escríbenos</h2>
+                <p class="hero-form-subtitle">Cuéntanos tu proyecto y nosotros te ayudamos.</p>
+                <!-- Formulario: envío via AJAX por app.js; acción como fallback si JS falla -->
+                <form class="hero-contact-form" id="contact-form"
+                      action="https://formsubmit.co/info@sesacomercializadora.com"
+                      method="POST">
+                    <input type="hidden" name="_subject" value="Nuevo mensaje desde sesacomercializadora.com">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none">
+
+                    <!-- Columna izquierda: campos cortos -->
+                    <div class="hero-form-left">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required minlength="2" maxlength="80" autocomplete="name" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s'.-]{2,80}" title="Ingresa un nombre valido (solo letras y espacios).">
+
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required maxlength="120" autocomplete="email" inputmode="email" spellcheck="false" title="Ingresa un correo electronico valido.">
+
+                        <label for="asunto">Asunto</label>
+                        <input type="text" id="asunto" name="asunto" required minlength="3" maxlength="120" autocomplete="off">
+                    </div>
+
+                    <!-- Columna derecha: mensaje largo -->
+                    <div class="hero-form-right">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="8" required minlength="10" maxlength="2000"></textarea>
+                    </div>
+
+                    <button type="submit" class="hero-form-submit" id="form-submit-btn">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección inferior: tarjeta de contacto + cobertura -->
+    <section class="solutions" aria-label="Datos de contacto">
+        <div class="solutions-wrapper">
+            <div class="solutions-right">
+                <div class="card contact-card">
+                    <h3>Contacto</h3>
+                    <p class="contact-item"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>Email: <a href="mailto:info@sesacomercializadora.com">info@sesacomercializadora.com</a></span></p>
+                    <p class="contact-item"><i class="fa-solid fa-phone" aria-hidden="true"></i><span>Tel: <a href="tel:+523329895090">+52 332 989 5090</a></span></p>
+                    <p class="contact-item"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>WhatsApp: <a href="https://wa.me/523329895090?text=Hola%20SESA%20Comercializadora%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer">Contáctanos</a></span></p>
+                    <p>Guadalajara, Jal., México</p>
+                </div>
+            </div>
+            <p class="coverage-cities coverage-inline">Atendemos a nivel nacional, Guadalajara, CDMX, Guanajuato, Colima, Pto. Vallarta, Aguascalientes, Morelia, La Paz, Q. Roo. y Yucatán.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p class="footer-text">2019 SESA Comercializadora. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Modal de confirmación: aparece después de enviar el formulario con éxito -->
+    <div class="modal-overlay" id="modal-ok" role="dialog" aria-modal="true" aria-label="Mensaje enviado">
+        <div class="modal-box">
+            <p class="modal-icon" aria-hidden="true"><i class="fa-solid fa-circle-check"></i></p>
+            <h3>¡Mensaje enviado!</h3>
+            <p>Te responderemos a la brevedad.<br>Gracias por contactarnos.</p>
+            <button class="modal-close" id="modal-close">Cerrar</button>
+        </div>
+    </div>
+
+</body>
+</html>

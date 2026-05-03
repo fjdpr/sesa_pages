@@ -1,0 +1,58 @@
+/* ─── Barra de navegación ─────────────────────────────────────────────────────
+   Navbar sticky con fondo semitransparente y efecto blur.
+   El logo tiene fondo blanco para que se vea sobre la barra oscura.
+   ─────────────────────────────────────────────────────────────────────────── */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 10%;
+    background: rgba(21, 21, 21, 0.92);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.35);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background: var(--white);
+    border-radius: 10px;
+    padding: 6px 10px;
+}
+
+.logo-img {
+    max-height: 100%;
+    width: auto;
+    object-fit: cover;
+    max-width: 120px;
+    border: none;
+    background-color: transparent;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    transition: color var(--anim-fast) ease, border-color var(--anim-fast) ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+    color: var(--white);
+    border-bottom-color: rgba(255, 255, 255, 0.8);
+}
