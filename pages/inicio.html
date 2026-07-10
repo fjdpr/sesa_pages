@@ -407,7 +407,7 @@
 
         .contact-form textarea {
             resize: vertical;
-            height: 150px;
+            height: 194px;
         }
 
         .contact-form-submit {
@@ -423,7 +423,9 @@
             cursor: pointer;
             transition: all 0.3s ease;
             width: fit-content;
-            margin: 0 auto;
+            grid-column: 1 / -1;
+            justify-self: center;
+            margin-top: 20px;
         }
 
         .contact-form-submit:hover {
@@ -883,7 +885,7 @@
                 <input type="hidden" name="_template" value="table">
                 <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none">
 
-                <!-- Columna izquierda: campos cortos + botón -->
+                <!-- Columna izquierda: campos cortos -->
                 <div class="contact-form-left">
                     <div>
                         <label for="nombre">Nombre</label>
@@ -899,8 +901,6 @@
                         <label for="asunto">Asunto</label>
                         <input type="text" id="asunto" name="asunto" required minlength="3" maxlength="120" autocomplete="off">
                     </div>
-
-                    <button type="submit" class="contact-form-submit" id="form-submit-btn">Enviar mensaje</button>
                 </div>
 
                 <!-- Columna derecha: mensaje largo -->
@@ -908,6 +908,9 @@
                     <label for="mensaje">Mensaje</label>
                     <textarea id="mensaje" name="mensaje" rows="5" required minlength="10" maxlength="2000"></textarea>
                 </div>
+
+                <!-- Botón centrado abarcando ambas columnas -->
+                <button type="submit" class="contact-form-submit" id="form-submit-btn">Enviar mensaje</button>
             </form>
         </div>
     </section>
