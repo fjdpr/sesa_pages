@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SESA Comercializadora | Inicio</title>
-    <meta name="description" content="SESA Comercializadora en Guadalajara: soluciones de seguridad, automatizacion y control de acceso para sector comercial, residencial e industrial.">
+    <meta name="description" content="SESA Comercializadora, comercializadora multinacional de Seguridad Industrial en Guadalajara, Mexico. Especialistas en Automatizacion, Control de Acceso y tecnologia de alta gama.">
     <link rel="canonical" href="https://sesacomercializadora.com/pages/inicio.html">
     <!-- Fuente corporativa -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,72 +12,902 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
     <!-- Iconos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
-    <!-- Estilos: cada archivo tiene una sola responsabilidad -->
+    <!-- Estilos -->
     <link rel="stylesheet" href="../assets/css/foundation.css">
     <link rel="stylesheet" href="../assets/css/nav.css">
     <link rel="stylesheet" href="../assets/css/hero.css">
     <link rel="stylesheet" href="../assets/css/sections.css">
     <link rel="stylesheet" href="../assets/css/animations.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
-    <!-- JS: animaciones y debug -->
-    <script src="../assets/js/app.js" defer></script>
+    <style>
+        /* ── SECCIÓN: Logo SESA ─────────────────────────────────── */
+        .logo-section {
+            background: linear-gradient(135deg, #0a1628 0%, #1a2a3a 100%);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .logo-container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .logo-container img {
+            max-width: 100%;
+            height: auto;
+            width: 300px;
+        }
+
+        /* Navegación */
+        
+        /* Sección Aliados Comerciales (HERO) */
+        .partners-section {
+            background: linear-gradient(135deg, #0a1628 0%, #1a2a3a 100%);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .partners-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .partners-grid,
+        .partners-grid-row2 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .partners-grid-row3 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .partner-item {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 40px 30px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 160px;
+            transition: all 0.3s ease;
+        }
+
+        .partner-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(212, 175, 55, 0.6);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+        }
+
+        .partner-item img {
+            max-width: 100%;
+            max-height: 140px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* ── SECCIÓN: Propuesta de Valor (4 Tarjetas) ─────────────────── */
+        .value-section {
+            background: linear-gradient(135deg, #0a1628 0%, #1a2a3a 100%);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .value-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .value-intro {
+            font-size: 1.2rem;
+            color: #b0b0b0;
+            margin-bottom: 60px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .value-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+        }
+
+        .value-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 40px 30px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .value-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(212, 175, 55, 0.6);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+        }
+
+        .value-icon {
+            font-size: 3rem;
+            color: #d4af37;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .value-card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+
+        .value-card p {
+            font-size: 0.95rem;
+            color: #b0b0b0;
+            margin: 0;
+        }
+
+        /* ── SECCIÓN: Sobre Nosotros ────────────────────────────────── */
+        .about-section {
+            background: linear-gradient(135deg, #0a1628 0%, #1a2a3a 100%);
+            padding: 80px 20px;
+        }
+
+        .about-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .about-header h2 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .about-header p {
+            font-size: 1.1rem;
+            color: #b0b0b0;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .about-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: transparent;
+            border: 2px solid #d4af37;
+            color: #d4af37;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: none;
+        }
+
+        .about-button:hover {
+            background: #d4af37;
+            color: #0a1628;
+        }
+
+        /* Banda dorada de experiencia */
+        .experience-banner {
+            background: linear-gradient(90deg, #d4af37, #f0d76f, #d4af37);
+            padding: 25px 20px;
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #0a1628;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* ── SECCIÓN: Formulario de Contacto ─────────────────────── */
+        .contact-form-section {
+            background: linear-gradient(135deg, #0a1628 0%, #1a2a3a 100%);
+            padding: 100px 20px;
+        }
+
+        .contact-form-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .contact-form-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .contact-form-header h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #fff;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+
+        .contact-form-header p {
+            font-size: 1.1rem;
+            color: #b0b0b0;
+        }
+
+        .contact-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .contact-form-left {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .contact-form-right {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form label {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #d4af37;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: #fff;
+            padding: 12px 16px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(212, 175, 55, 0.6);
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: rgba(176, 176, 176, 0.5);
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 180px;
+        }
+
+        .contact-form-submit {
+            grid-column: 1 / -1;
+            margin-top: 20px;
+            padding: 16px 40px;
+            background: linear-gradient(90deg, #d4af37, #f0d76f);
+            border: none;
+            color: #0a1628;
+            font-weight: 700;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .contact-form-submit:hover {
+            background: linear-gradient(90deg, #f0d76f, #d4af37);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+        }
+
+        .contact-form-submit:active {
+            transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+            .contact-form {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .contact-form-submit {
+                grid-column: auto;
+            }
+
+            .contact-form-header h2 {
+                font-size: 1.8rem;
+            }
+        }
+
+        /* ── SECCIÓN: Contacto y Cobertura ─────────────────────── */
+        .contact-coverage-section {
+            background: linear-gradient(135deg, #0a1628 0%, #1a2a3a 100%);
+            padding: 80px 20px;
+        }
+
+        .contact-coverage-wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .contact-info-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .contact-column h3,
+        .coverage-column h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #d4af37;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+            align-items: flex-start;
+        }
+
+        .contact-item i {
+            font-size: 1.8rem;
+            color: #d4af37;
+            min-width: 30px;
+            text-align: center;
+            margin-top: 3px;
+        }
+
+        .contact-item div {
+            flex: 1;
+        }
+
+        .contact-item .label {
+            font-size: 0.85rem;
+            color: #b0b0b0;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .contact-item a,
+        .contact-item p {
+            color: #fff;
+            margin: 0;
+            font-size: 0.95rem;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            color: #d4af37;
+        }
+
+        .coverage-column p {
+            color: #b0b0b0;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .coverage-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .coverage-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .coverage-col li {
+            color: #b0b0b0;
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+            font-size: 0.95rem;
+        }
+
+        .coverage-col li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #d4af37;
+            font-weight: bold;
+        }
+
+        .map-column {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 500px;
+        }
+
+        .coverage-map {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            border-radius: 8px;
+            border: 3px solid #d4af37;
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+            object-fit: contain;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .contact-coverage-wrapper {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .map-column {
+                height: 400px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-coverage-wrapper {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .contact-info-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .map-column {
+                height: 300px;
+            }
+
+            .contact-column h3,
+            .coverage-column h3 {
+                font-size: 1.1rem;
+            }
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 30px;
+        }
+
+        .about-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px 30px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            transition: all 0.3s ease;
+            border-left: 4px solid #d4af37;
+        }
+
+        .about-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(212, 175, 55, 0.6);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+        }
+
+        .about-card .icon {
+            font-size: 2.5rem;
+            color: #d4af37;
+            margin-bottom: 20px;
+        }
+
+        .about-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .about-card p {
+            font-size: 0.95rem;
+            color: #b0b0b0;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* ── SECCIÓN: Estadísticas ────────────────────────────────────── */
+        .stats-section {
+            background: linear-gradient(135deg, #0a1628 0%, #1a2a3a 100%);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .stats-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            align-items: center;
+        }
+
+        .stat-item {
+            color: #d4af37;
+        }
+
+        .stat-item .number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #d4af37;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .stat-item .label {
+            font-size: 0.85rem;
+            color: #b0b0b0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        /* Sección Contacto */
+        .solutions {
+            background: #fff;
+            padding: 60px 20px;
+        }
+
+        /* ────── RESPONSIVE ────────────────────────────────────── */
+        @media (max-width: 768px) {
+            .partners-grid,
+            .partners-grid-row2 {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .partners-grid-row3 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .value-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+
+            .value-intro {
+                font-size: 1rem;
+                margin-bottom: 40px;
+            }
+
+            .about-header h2 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .partners-grid,
+            .partners-grid-row2,
+            .partners-grid-row3 {
+                grid-template-columns: 1fr;
+            }
+
+            .value-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .value-icon {
+                font-size: 2.5rem;
+            }
+
+            .about-header h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body data-page="inicio">
 
-    <!-- Navegación fija arriba -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="../images/sesa-comercializadora-logo-guadalajara-mexico.png"
-                     alt="SESA Comercializadora logo"
-                     title="SESA Comercializadora | Guadalajara, Mexico"
-                     class="logo-img">
-            </div>
-            <ul class="nav-links">
-                <li><a href="inicio.html">Inicio</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- ── SECCIÓN: Logo SESA ────────────────────────────────────── -->
+    <section class="logo-section">
+        <div class="logo-container">
+            <img src="../images/sesa-comercializadora-presencia-nacional-e-internacional.png" 
+                 alt="SESA Comercializadora Logo" 
+                 title="SESA Comercializadora">
+        </div>
+    </section>
 
-    <!-- Hero: imagen de fondo + logo partner + texto principal -->
-    <section class="hero" id="inicio">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="hero-logo-container">
-                <img src="../images/faac-partner-tecnologia-alta-gama-seguridad-industrial-mexico.png"
-                     alt="Logo FAAC partner SESA Comercializadora"
-                     title="Partner tecnologico de alta gama | Guadalajara, Mexico"
-                     class="hero-logo-left">
+    <!-- ── SECCIÓN: Nuestros Aliados Comerciales (NUEVO HERO) ────────────── -->
+    <section class="partners-section" id="inicio">
+        <div class="partners-wrapper">
+            <!-- Fila 1: 3 logos -->
+            <div class="partners-grid">
+                <div class="partner-item">
+                    <img src="../images/partner-broker-inmobilillario-inversiones-estrategicas.png" alt="Broker Inmobiliario">
+                </div>
+                <div class="partner-item">
+                    <img src="../images/partner-espacio-publicitario.png" alt="Espacio Publicitario">
+                </div>
+                <div class="partner-item">
+                    <img src="../images/partner-faac-sistemas-de-automatrizacion.png" alt="FAAC">
+                </div>
             </div>
-            <div class="hero-text">
-                <h1>SESA Comercializadora</h1>
-                <p class="hero-intro">Somos el multinacional que tu empresa necesita.</p>
-                <p class="hero-description">Especialistas en la comercializacion de equipos tecnologicos de seguridad, automatizacion y control de acceso. Ofrecemos soluciones de alta gama para los sectores comercial, residencial e industrial.</p>
-                <p class="hero-tagline">Nos estamos reinventando para ti<br>30 años, SESA Comercializadora</p>
+
+            <!-- Fila 2: 3 logos -->
+            <div class="partners-grid-row2">
+                <div class="partner-item">
+                    <img src="../images/partner-control-y-acceso.png" alt="Control y Acceso">
+                </div>
+                <div class="partner-item">
+                    <img src="../images/partner-reseñas-alex-del-pino.png" alt="Reseña Alex del Pino">
+                </div>
+                <div class="partner-item">
+                    <img src="../images/partner-emprende-platicas-servicio-actitud.png" alt="Emprende">
+                </div>
+            </div>
+
+            <!-- Fila 3: 2 logos centrados -->
+            <div class="partners-grid-row3">
+                <div class="partner-item">
+                    <img src="../images/partner-hidroponia-huertos-organicos-inteligentes.png" alt="Hidroponía">
+                </div>
+                <div class="partner-item">
+                    <img src="../images/partner-alteck-alta-tecnologia-en comunicacion.png" alt="AlteCk">
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección inferior: tarjeta de contacto + cobertura -->
-    <section class="solutions">
-        <div class="solutions-wrapper">
-            <div class="solutions-right">
-                <div class="card contact-card">
-                    <h3>Contacto</h3>
-                    <p class="contact-item"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>Email: <a href="mailto:info@sesacomercializadora.com">info@sesacomercializadora.com</a></span></p>
-                    <p class="contact-item"><i class="fa-solid fa-phone" aria-hidden="true"></i><span>Tel: <a href="tel:+523329895090">+52 332 989 5090</a></span></p>
-                    <p class="contact-item"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>WhatsApp: <a href="https://wa.me/523329895090?text=Hola%20SESA%20Comercializadora%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer">Contáctanos</a></span></p>
-                    <p>Guadalajara, Jal., México</p>
+    <!-- ── SECCIÓN: Propuesta de Valor (4 Tarjetas) ────────────────────── -->
+    <section class="value-section">
+        <div class="value-wrapper">
+            <p class="value-intro">Comercialización y soluciones integrales para la industria, construcción, energía, infraestructura y más.</p>
+            
+            <div class="value-grid">
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Confianza</h3>
+                    <p>Relaciones sólidas y durables</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Experiencia</h3>
+                    <p>Más de 20 años generando valor</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Cobertura</h3>
+                    <p>Presencia nacional e internacional</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-cog"></i></div>
+                    <h3>Soluciones</h3>
+                    <p>A la medida de cada negocio</p>
                 </div>
             </div>
-            <p class="coverage-cities coverage-inline">Atendemos a nivel nacional, Guadalajara, CDMX, Guanajuato, Colima, Pto. Vallarta, Aguascalientes, Morelia, La Paz, Q. Roo. y Yucatán.</p>
+        </div>
+    </section>
+
+    <!-- ── SECCIÓN: Estadísticas ────────────────────────────────────── -->
+    <section class="stats-section">
+        <div class="stats-wrapper">
+            <div class="stat-item">
+                <div class="number">30+</div>
+                <div class="label">Años de Experiencia</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">500+</div>
+                <div class="label">Proyectos Realizados</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">15+</div>
+                <div class="label">Industrias Atendidas</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">Nacional e<br>Internacional</div>
+                <div class="label">Cobertura</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── SECCIÓN: Sobre Nosotros ────────────────────────────────── -->
+    <section class="about-section">
+        <div class="about-wrapper">
+            <div class="about-header">
+                <h2>Sobre Nosotros</h2>
+                <p>En SESA Comercializadora conectamos productos, marcas y personas para ofrecer soluciones eficientes y confiables que generan valor y construyen el futuro.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>Misión</h3>
+                    <p>Ofrecer soluciones integrales con los más altos estándares de calidad y servicio.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon"><i class="fas fa-eye"></i></div>
+                    <h3>Visión</h3>
+                    <p>Ser la comercializadora líder reconocida por innovación e confianza.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon"><i class="fas fa-gem"></i></div>
+                    <h3>Valores</h3>
+                    <p>Integridad, compromiso, excelencia, innovación y trabajo en equipo.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Compromiso</h3>
+                    <p>Relaciones de largo plazo basadas en confianza, resultados y crecimiento mutuo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección inferior: Contacto y Cobertura -->
+    <section class="contact-coverage-section">
+        <div class="contact-coverage-wrapper">
+            <!-- Contenedor Info: Contacto + Cobertura -->
+            <div class="contact-info-container">
+                <!-- Columna 1: Contacto -->
+                <div class="contact-column">
+                    <h3>Contacto</h3>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <p class="label">Email</p>
+                            <a href="mailto:info@sesacomercializadora.com">info@sesacomercializadora.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <p class="label">Teléfono</p>
+                            <a href="tel:+523329895090">+52 332 989 5090</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div>
+                            <p class="label">WhatsApp</p>
+                            <a href="https://wa.me/523329895090?text=Hola%20SESA%20Comercializadora%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer">Contáctanos</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <p class="label">Ubicación</p>
+                            <p>Guadalajara, Jal., México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Cobertura Nacional -->
+                <div class="coverage-column">
+                    <h3>Cobertura Nacional</h3>
+                    <p>Atendemos a nivel nacional:</p>
+                    <div class="coverage-list">
+                        <div class="coverage-col">
+                            <ul>
+                                <li>Guadalajara</li>
+                                <li>CDMX</li>
+                                <li>Guanajuato</li>
+                                <li>Colima</li>
+                                <li>Pto. Vallarta</li>
+                            </ul>
+                        </div>
+                        <div class="coverage-col">
+                            <ul>
+                                <li>Aguascalientes</li>
+                                <li>Morelia</li>
+                                <li>La Paz</li>
+                                <li>Q. Roo.</li>
+                                <li>Yucatán</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna 3: Mapa GRANDE -->
+            <div class="map-column">
+                <img src="../images/mapa.cobertura.png" alt="Mapa de cobertura en México" class="coverage-map">
+            </div>
+        </div>
+    </section>
+
+    <!-- Banda dorada de experiencia -->
+    <div class="experience-banner">
+        Más de 30 años de experiencia
+    </div>
+
+    <!-- Sección: Formulario de Contacto -->
+    <section class="contact-form-section">
+        <div class="contact-form-wrapper">
+            <div class="contact-form-header">
+                <h2>Escríbenos</h2>
+                <p>Cuéntanos tu proyecto y nosotros te ayudamos.</p>
+            </div>
+
+            <form class="contact-form" id="contact-form"
+                  action="https://formsubmit.co/info@sesacomercializadora.com"
+                  method="POST">
+                <input type="hidden" name="_subject" value="Nuevo mensaje desde sesacomercializadora.com">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none">
+
+                <!-- Columna izquierda: campos cortos -->
+                <div class="contact-form-left">
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required minlength="2" maxlength="80" autocomplete="name" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s'.-]{2,80}" title="Ingresa un nombre valido (solo letras y espacios).">
+                    </div>
+
+                    <div>
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required maxlength="120" autocomplete="email" inputmode="email" spellcheck="false" title="Ingresa un correo electronico valido.">
+                    </div>
+
+                    <div>
+                        <label for="asunto">Asunto</label>
+                        <input type="text" id="asunto" name="asunto" required minlength="3" maxlength="120" autocomplete="off">
+                    </div>
+                </div>
+
+                <!-- Columna derecha: mensaje largo -->
+                <div class="contact-form-right">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="8" required minlength="10" maxlength="2000"></textarea>
+                </div>
+
+                <button type="submit" class="contact-form-submit" id="form-submit-btn">Enviar mensaje</button>
+            </form>
         </div>
     </section>
 
     <footer>
         <p class="footer-text">2019 SESA Comercializadora. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- JS: animaciones y debug -->
+    <script src="../assets/js/app.js" defer></script>
 
 </body>
 </html>
