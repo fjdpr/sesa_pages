@@ -64,12 +64,12 @@
         }
 
         .partners-title {
-            font-size: 1rem;
-            font-weight: 700;
-            color: var(--color-text-muted);
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--color-text);
             text-transform: uppercase;
-            letter-spacing: 1.5px;
-            margin-bottom: 30px;
+            letter-spacing: 1px;
+            margin-bottom: 35px;
         }
 
         .partners-grid,
@@ -82,9 +82,10 @@
 
         .partners-grid-row3 {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 20px;
-            margin-bottom: 0;
+            max-width: 500px;
+            margin: 0 auto;
         }
 
         .partner-item {
@@ -95,7 +96,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 140px;
+            height: 160px;
             transition: all 0.3s ease;
         }
 
@@ -356,13 +357,12 @@
             display: flex;
             flex-direction: column;
             gap: 22px;
-            align-items: flex-start;
         }
 
         .contact-form-right {
             display: flex;
             flex-direction: column;
-            gap: 0;
+            gap: 22px;
         }
 
         .contact-form-left > div,
@@ -424,7 +424,6 @@
             transition: all 0.3s ease;
             width: fit-content;
             margin-top: 0;
-            align-self: center;
         }
 
         .contact-form-submit:hover {
